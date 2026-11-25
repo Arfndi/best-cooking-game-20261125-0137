@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Golden Ladle — a hearth-kitchen rush</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #2e2a26;
+    height: 100%;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #wrap {
+    width: min(1280px, 100vw);
+    aspect-ratio: 1280 / 800;
+  }
+  canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background: #f3e2c2;
+  }
+  #selftest-result {
+    position: fixed;
+    left: 8px;
+    bottom: 8px;
+    max-width: 90vw;
+    max-height: 40vh;
+    overflow: auto;
+    background: rgba(255, 255, 255, 0.92);
+    color: #222;
+    font: 12px monospace;
+    padding: 8px;
+    margin: 0;
+    white-space: pre-wrap;
+  }
+</style>
+</head>
+<body>
+<div id="wrap"><canvas id="game" width="1280" height="800"></canvas></div>
+<script src="src/config.js"></script>
+<script src="src/random.js"></script>
+<script src="src/audio.js"></script>
+<script src="src/input.js"></script>
+<script src="src/kitchen.js"></script>
+<script src="src/orders.js"></script>
+<script src="src/chef.js"></script>
+<script src="src/render.js"></script>
+<script src="src/shots.js"></script>
+<script src="src/main.js"></script>
+</body>
+</html>
